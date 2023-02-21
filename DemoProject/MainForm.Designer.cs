@@ -51,15 +51,15 @@ namespace DemoProject
             this.lblHelloWorld.Size = new System.Drawing.Size(0, 13);
             this.lblHelloWorld.TabIndex = 1;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(325, 145);
             this.Controls.Add(this.lblHelloWorld);
             this.Controls.Add(this.btnClickThis);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MainForm";
+            this.Text = "Demo Project";
             this.ResumeLayout(false);
             this.PerformLayout();
 
