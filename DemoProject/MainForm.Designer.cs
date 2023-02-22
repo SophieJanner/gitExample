@@ -33,6 +33,7 @@ namespace DemoProject
             this.lblHelloWorld = new System.Windows.Forms.Label();
             this.btnCountPresses = new System.Windows.Forms.Button();
             this.lblCount = new System.Windows.Forms.Label();
+            this.btnEndProgram = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClickThis
@@ -73,11 +74,22 @@ namespace DemoProject
             this.lblCount.TabIndex = 3;
             this.lblCount.Text = "0";
             // 
+            // btnEndProgram
+            // 
+            this.btnEndProgram.Location = new System.Drawing.Point(13, 101);
+            this.btnEndProgram.Name = "btnEndProgram";
+            this.btnEndProgram.Size = new System.Drawing.Size(75, 23);
+            this.btnEndProgram.TabIndex = 4;
+            this.btnEndProgram.Text = "End ";
+            this.btnEndProgram.UseVisualStyleBackColor = true;
+            this.btnEndProgram.Click += new System.EventHandler(this.btnEndProgram_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(325, 145);
+            this.Controls.Add(this.btnEndProgram);
             this.Controls.Add(this.lblCount);
             this.Controls.Add(this.btnCountPresses);
             this.Controls.Add(this.lblHelloWorld);
@@ -95,6 +107,7 @@ namespace DemoProject
         private System.Windows.Forms.Label lblHelloWorld;
         private System.Windows.Forms.Button btnCountPresses;
         private System.Windows.Forms.Label lblCount;
+        private System.Windows.Forms.Button btnEndProgram;
     }
 }
 

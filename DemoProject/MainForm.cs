@@ -21,5 +21,10 @@ namespace DemoProject
 
             lblCount.Text = (currentCount + 1).ToString();
         }
+
+        private void btnEndProgram_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
