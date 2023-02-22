@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace DemoProject
@@ -12,7 +13,8 @@ namespace DemoProject
 
         private void btnClickThis_Click(object sender, EventArgs e)
         {
-            lblHelloWorld.Text = "Hello World!";
+            btnClickThis.BackColor = Color.Blue;
+            btnClickThis.ForeColor = Color.White;
         }
 
         private void btnCountPresses_Click(object sender, EventArgs e)
@@ -26,5 +28,6 @@ namespace DemoProject
         {
             this.Close();
         }
+
     }
 }
