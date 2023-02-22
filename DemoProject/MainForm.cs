@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DemoProject
@@ -20,6 +13,13 @@ namespace DemoProject
         private void btnClickThis_Click(object sender, EventArgs e)
         {
             lblHelloWorld.Text = "Hello World!";
+        }
+
+        private void btnCountPresses_Click(object sender, EventArgs e)
+        {
+            int currentCount = int.Parse(lblCount.Text);
+
+            lblCount.Text = (currentCount + 1).ToString();
         }
     }
 }

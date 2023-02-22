@@ -31,6 +31,8 @@ namespace DemoProject
         {
             this.btnClickThis = new System.Windows.Forms.Button();
             this.lblHelloWorld = new System.Windows.Forms.Label();
+            this.btnCountPresses = new System.Windows.Forms.Button();
+            this.lblCount = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnClickThis
@@ -52,11 +54,32 @@ namespace DemoProject
             this.lblHelloWorld.Size = new System.Drawing.Size(0, 13);
             this.lblHelloWorld.TabIndex = 1;
             // 
+            // btnCountPresses
+            // 
+            this.btnCountPresses.Location = new System.Drawing.Point(13, 22);
+            this.btnCountPresses.Name = "btnCountPresses";
+            this.btnCountPresses.Size = new System.Drawing.Size(75, 23);
+            this.btnCountPresses.TabIndex = 2;
+            this.btnCountPresses.Text = "Count up!";
+            this.btnCountPresses.UseVisualStyleBackColor = true;
+            this.btnCountPresses.Click += new System.EventHandler(this.btnCountPresses_Click);
+            // 
+            // lblCount
+            // 
+            this.lblCount.AutoSize = true;
+            this.lblCount.Location = new System.Drawing.Point(94, 27);
+            this.lblCount.Name = "lblCount";
+            this.lblCount.Size = new System.Drawing.Size(13, 13);
+            this.lblCount.TabIndex = 3;
+            this.lblCount.Text = "0";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(325, 145);
+            this.Controls.Add(this.lblCount);
+            this.Controls.Add(this.btnCountPresses);
             this.Controls.Add(this.lblHelloWorld);
             this.Controls.Add(this.btnClickThis);
             this.Name = "MainForm";
@@ -70,6 +93,8 @@ namespace DemoProject
 
         private System.Windows.Forms.Button btnClickThis;
         private System.Windows.Forms.Label lblHelloWorld;
+        private System.Windows.Forms.Button btnCountPresses;
+        private System.Windows.Forms.Label lblCount;
     }
 }
 
